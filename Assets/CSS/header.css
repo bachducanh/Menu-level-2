@@ -1,0 +1,46 @@
+#global-header{
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+}
+
+#global-header > .navbar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar > li{
+    padding: 30px;
+    position: relative;
+}
+
+.navbar > li > a {
+    color: #fff;
+}
+ 
+.navbar .subnav{
+    display: none;
+    position: absolute;
+    margin: 30px 0px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    left: 0px;
+}
+
+.navbar > li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.navbar > li:hover > .subnav{
+    display: block;
+}
+
+
+.subnav > li{
+    padding: 15px;
+}
+
+
